@@ -136,9 +136,9 @@ function App() {
       <section className="contact" id="contact">
         <h2>Contact Me</h2>
 
-        <p>Email: yourmail@gmail.com</p>
+        <p>Email: atharvakamthe2006@gmail.com</p>
         <p>GitHub: github.com/atharvakamthe0208</p>
-        <p>LinkedIn: linkedin.com/in/yourprofile</p>
+        <p>LinkedIn: www.linkedin.com/in/atharvakamthe/</p>
       </section>
 
       <footer>
