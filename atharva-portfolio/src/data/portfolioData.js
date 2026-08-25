@@ -210,12 +210,20 @@ export const achievementsData = [
   {
     title: "Smart India Hackathon (SIH) Participant",
     issuer: "Ministry of Education, Govt. of India",
-    date: "2024",
+    date: "2025",
     category: "Hackathon",
     desc: "Developed a prototype for digital governance and resource optimization under intense 36-hour hackathon constraints.",
     link: "https://sih.gov.in",
     icon: "Trophy"
   },
+  {
+    title: "GAME X INNOVATE :HACKSPRINT v7,0",
+    issuer: "MMCOE",
+    date: "2026",
+    category: "Certification",
+    desc: "1st Prize at MMCOE 24 hrs gamex hackathon",
+    icon: "certification"
+  }
 ];
 export const socialLinks = [
   {
