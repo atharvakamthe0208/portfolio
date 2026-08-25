@@ -8,16 +8,14 @@ export const personalInfo = {
     "Problem Solver & Coder",
     "Aspiring Software Engineer"
   ],
-  bio: "Passionate Computer Engineering student with a strong foundation in Web Development, Android Development, Data Structures, and Cloud Technologies. I love transforming complex challenges into elegant, efficient, and user-centric digital products.",
+  bio: "Passionate Computer Engineering student with a strong foundation in Web Development, Android Development, Data Structures, and Full Stack. I love transforming complex challenges into elegant, efficient, and user-centric digital products.",
   location: "Pune, Maharashtra, India",
-  email: "atharvakamthe.dev@gmail.com",
-  phone: "+91 98765 43210",
+  email: "atharvakamthe2006@gmail.com",
+  phone: "+91 8421568534",
   status: "Available for Internships & Software Roles",
   stats: [
     { label: "Major Projects", value: "4+", detail: "Full-Stack & Native Apps" },
-    { label: "Problems Solved", value: "350+", detail: "LeetCode & HackerRank" },
-    { label: "Academic CGPA", value: "8.9+", detail: "Computer Engineering" },
-    { label: "Certifications", value: "5+", detail: "Cloud & Dev Credentials" }
+    { label: "Academic CGPA", value: "8.2+", detail: "Computer Engineering" },
   ]
 };
 
@@ -33,10 +31,10 @@ export const aboutMeData = {
   ],
   milestones: [
     {
-      year: "2022 – Present",
+      year: "2025 – Present",
       title: "Bachelor of Engineering in Computer Engineering",
       institution: "Savitribai Phule Pune University (SPPU)",
-      description: "Pursuing core computer science curriculum covering Data Structures, OOP, Database Management Systems, Computer Networks, Operating Systems, and Software Engineering. Maintained top academic rank with 8.9+ CGPA.",
+      description: "Pursuing core computer science curriculum covering Data Structures, OOP, Database Management Systems, Computer Networks, Operating Systems, and Software Engineering.",
       badge: "Degree / Academic"
     },
     {
@@ -53,13 +51,6 @@ export const aboutMeData = {
       description: "Designed 'Realm of Shadows' in Unreal Engine 5 using Blueprints and C++, alongside crafting a high-speed binary file POS billing system in C.",
       badge: "Systems & 3D"
     },
-    {
-      year: "2025",
-      title: "Cloud Certifications & Competitive Programming",
-      institution: "Google Cloud / LeetCode / HackerRank",
-      description: "Solved 350+ algorithmic challenges across LeetCode and HackerRank. Completed Google Cloud Fundamentals and full-stack development certifications.",
-      badge: "Recognitions"
-    }
   ]
 };
 
@@ -75,11 +66,9 @@ export const skillsData = [
   { name: "Java (Core & Adv)", category: "Backend", level: "Advanced", percentage: 90, icon: "Coffee", color: "#f89820" },
   { name: "Node.js", category: "Backend", level: "Proficient", percentage: 82, icon: "Server", color: "#68a063" },
   { name: "Firebase (Auth/DB)", category: "Backend", level: "Advanced", percentage: 88, icon: "Flame", color: "#ffca28" },
-  { name: "REST APIs", category: "Backend", level: "Advanced", percentage: 86, icon: "Network", color: "#00f0ff" },
   { name: "C / C++", category: "Backend", level: "Proficient", percentage: 85, icon: "Binary", color: "#00599c" },
 
   // Databases
-  { name: "MySQL", category: "Databases", level: "Advanced", percentage: 88, icon: "Database", color: "#00758f" },
   { name: "Firebase Realtime DB", category: "Databases", level: "Advanced", percentage: 90, icon: "Radio", color: "#f57c00" },
   { name: "Cloud Firestore", category: "Databases", level: "Proficient", percentage: 84, icon: "Layers", color: "#ffa000" },
   
@@ -88,12 +77,8 @@ export const skillsData = [
   { name: "Git & GitHub", category: "Tools", level: "Advanced", percentage: 92, icon: "GitBranch", color: "#f05032" },
   { name: "VS Code", category: "Tools", level: "Expert", percentage: 95, icon: "Terminal", color: "#007acc" },
   { name: "Figma (UI/UX)", category: "Tools", level: "Proficient", percentage: 80, icon: "Figma", color: "#f24e1e" },
-  { name: "Postman", category: "Tools", level: "Proficient", percentage: 85, icon: "Send", color: "#ff6c37" },
-
   // Cloud & Emerging
-  { name: "Google Cloud (GCP)", category: "Cloud & Emerging", level: "Proficient", percentage: 78, icon: "CloudSun", color: "#4285f4" },
-  { name: "AWS (Learning)", category: "Cloud & Emerging", level: "Intermediate", percentage: 70, icon: "CloudRain", color: "#ff9900" },
-  { name: "Unreal Engine 5", category: "Cloud & Emerging", level: "Intermediate", percentage: 75, icon: "Gamepad2", color: "#0e1128" },
+  { name: "Unreal Engine 5", category: "Cloud & Emerging", level: "Intermediate", percentage: 75, icon: "Gamepad2", color: "#42b7a9" },
   { name: "Blueprints Scripting", category: "Cloud & Emerging", level: "Proficient", percentage: 80, icon: "Cpu", color: "#8b5cf6" }
 ];
 
@@ -214,15 +199,6 @@ export const projectsData = [
 
 export const achievementsData = [
   {
-    title: "Google Cloud Computing Foundations",
-    issuer: "Google Cloud / Qwiklabs",
-    date: "2024",
-    category: "Certification",
-    desc: "Earned official Google Cloud badges in Cloud Infrastructure, Cloud Native Core Services, Big Data, and Machine Learning fundamentals.",
-    link: "https://www.cloudskillsboost.google",
-    icon: "Cloud"
-  },
-  {
     title: "Java Full Stack & Android Development",
     issuer: "Coursera / Meta / University Certifications",
     date: "2024",
@@ -240,33 +216,6 @@ export const achievementsData = [
     link: "https://sih.gov.in",
     icon: "Trophy"
   },
-  {
-    title: "350+ Coding Problems Solved",
-    issuer: "LeetCode & HackerRank",
-    date: "2023 - Present",
-    category: "Competitive Coding",
-    desc: "Consistently practiced Data Structures & Algorithms including Dynamic Programming, Graphs, Trees, and Binary Search.",
-    link: "https://leetcode.com",
-    icon: "Code2"
-  },
-  {
-    title: "National Level Technical Workshop on AI & Web 3.0",
-    issuer: "IEEE Student Branch",
-    date: "2024",
-    category: "Workshop",
-    desc: "Attended hands-on sessions on modern web engineering, decentralized applications, and integrating LLMs into modern web stacks.",
-    link: "#",
-    icon: "Cpu"
-  },
-  {
-    title: "Academic Excellence Award",
-    issuer: "Engineering Department",
-    date: "2023",
-    category: "Academic",
-    desc: "Awarded top percentile rank for academic distinction in Data Structures, Object-Oriented Programming, and Mathematics.",
-    link: "#",
-    icon: "Award"
-  }
 ];
 export const socialLinks = [
   {
