@@ -74,7 +74,7 @@ export default function Contact({ onShowToast }) {
       });
 
       if (onShowToast) {
-        onShowToast('Message Sent Successfully! Atharva will get back to you shortly.');
+        onShowToast('Message Dispatched! Atharva will get back to you promptly.');
       }
 
       // Reset form
@@ -84,7 +84,7 @@ export default function Contact({ onShowToast }) {
         subject: '',
         message: ''
       });
-    }, 900);
+    }, 800);
   };
 
   return (
@@ -102,10 +102,10 @@ export default function Contact({ onShowToast }) {
             <span>GET IN TOUCH</span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mb-4">
-            Let's Build Something <span className="gradient-text-cyan-purple">Extraordinary</span>
+            Let's Connect & <span className="gradient-text-cyan-purple">Collaborate</span>
           </h2>
           <p className="text-base sm:text-lg text-slate-300">
-            Have a project in mind, an internship opportunity, or simply want to talk tech? Drop a message below and I'll respond as soon as possible.
+            Have an internship opportunity, software project, or technical question? Feel free to reach out directly.
           </p>
         </div>
 
@@ -120,7 +120,7 @@ export default function Contact({ onShowToast }) {
                 Contact Information
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 mb-6">
-                Feel free to contact me via email, phone, or any of the social links.
+                Direct channels to get in touch with Atharva Santosh Kamthe.
               </p>
 
               <div className="space-y-4">
@@ -134,15 +134,31 @@ export default function Contact({ onShowToast }) {
                   </div>
                   <div>
                     <div className="text-[11px] font-mono text-slate-400">Email Address</div>
-                    <div className="text-xs sm:text-sm font-semibold text-white group-hover:text-cyan-300 transition-colors">
+                    <div className="text-xs sm:text-sm font-semibold text-white group-hover:text-cyan-300 transition-colors break-all">
                       {personalInfo.email}
+                    </div>
+                  </div>
+                </a>
+
+                {/* Phone */}
+                <a
+                  href={`tel:${personalInfo.phone.replace(/[^0-9+]/g, '')}`}
+                  className="flex items-center gap-4 p-3.5 rounded-2xl bg-white/[0.02] border border-white/[0.06] hover:border-emerald-500/40 hover:bg-white/[0.05] transition-all group"
+                >
+                  <div className="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 group-hover:scale-110 transition-transform">
+                    <Phone className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <div className="text-[11px] font-mono text-slate-400">Phone Number</div>
+                    <div className="text-xs sm:text-sm font-semibold text-white group-hover:text-emerald-300 transition-colors">
+                      {personalInfo.phone}
                     </div>
                   </div>
                 </a>
 
                 {/* Location */}
                 <div className="flex items-center gap-4 p-3.5 rounded-2xl bg-white/[0.02] border border-white/[0.06]">
-                  <div className="w-10 h-10 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400">
+                  <div className="w-10 h-10 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 shrink-0">
                     <MapPin className="w-5 h-5" />
                   </div>
                   <div>
@@ -155,33 +171,17 @@ export default function Contact({ onShowToast }) {
 
                 {/* Availability */}
                 <div className="flex items-center gap-4 p-3.5 rounded-2xl bg-white/[0.02] border border-white/[0.06]">
-                  <div className="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
+                  <div className="w-10 h-10 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 shrink-0">
                     <Clock className="w-5 h-5" />
                   </div>
                   <div>
-                    <div className="text-[11px] font-mono text-slate-400">Response Time</div>
-                    <div className="text-xs sm:text-sm font-semibold text-emerald-300">
-                      Within 24 Hours
+                    <div className="text-[11px] font-mono text-slate-400">Availability</div>
+                    <div className="text-xs sm:text-sm font-semibold text-cyan-300">
+                      Open to Internships & Software Roles
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-
-            {/* Quick Status Box */}
-            <div className="p-6 rounded-3xl bg-gradient-to-br from-cyan-950/40 via-purple-950/20 to-slate-900/40 border border-cyan-500/30 shadow-xl">
-              <div className="flex items-center gap-2 mb-2">
-                <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
-                <span className="text-xs font-mono font-bold text-cyan-300 uppercase">
-                  Current Status
-                </span>
-              </div>
-              <h4 className="text-sm sm:text-base font-bold text-white">
-                Actively Seeking Software Roles & Internships
-              </h4>
-              <p className="text-xs text-slate-300 mt-1 leading-relaxed">
-                Open to Full-Stack, Android, and Software Engineering positions.
-              </p>
             </div>
 
           </div>
@@ -222,7 +222,7 @@ export default function Contact({ onShowToast }) {
                         name="name"
                         value={formData.name}
                         onChange={handleChange}
-                        placeholder="John Doe"
+                        placeholder="e.g. John Doe"
                         className={`w-full px-4 py-3 rounded-xl bg-white/[0.03] border ${
                           errors.name ? 'border-rose-500 focus:border-rose-500' : 'border-white/[0.1] focus:border-cyan-400'
                         } text-white placeholder-slate-500 text-sm focus:outline-none focus:ring-1 focus:ring-cyan-400/50 transition-all`}
@@ -269,7 +269,7 @@ export default function Contact({ onShowToast }) {
                       name="subject"
                       value={formData.subject}
                       onChange={handleChange}
-                      placeholder="Project Inquiry / Job Opportunity"
+                      placeholder="Internship Inquiry / Project Discussion"
                       className={`w-full px-4 py-3 rounded-xl bg-white/[0.03] border ${
                         errors.subject ? 'border-rose-500 focus:border-rose-500' : 'border-white/[0.1] focus:border-cyan-400'
                       } text-white placeholder-slate-500 text-sm focus:outline-none focus:ring-1 focus:ring-cyan-400/50 transition-all`}
@@ -292,7 +292,7 @@ export default function Contact({ onShowToast }) {
                       rows={5}
                       value={formData.message}
                       onChange={handleChange}
-                      placeholder="Hi Atharva, I'd like to discuss a project..."
+                      placeholder="Hi Atharva, I would like to get in touch regarding..."
                       className={`w-full px-4 py-3 rounded-xl bg-white/[0.03] border ${
                         errors.message ? 'border-rose-500 focus:border-rose-500' : 'border-white/[0.1] focus:border-cyan-400'
                       } text-white placeholder-slate-500 text-sm focus:outline-none focus:ring-1 focus:ring-cyan-400/50 transition-all resize-none`}

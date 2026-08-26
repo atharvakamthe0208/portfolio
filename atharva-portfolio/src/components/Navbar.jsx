@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Download, Sparkles, ChevronRight, Terminal } from 'lucide-react';
+import { Menu, X, Download, ChevronRight } from 'lucide-react';
 
 const navItems = [
   { name: 'About', href: '#about' },
   { name: 'Skills', href: '#skills' },
   { name: 'Projects', href: '#projects' },
-  { name: 'Achievements', href: '#achievements' },
   { name: 'Resume', href: '#resume' },
-  { name: 'Connect', href: '#connect' },
   { name: 'Contact', href: '#contact' },
 ];
 
@@ -25,7 +23,7 @@ export default function Navbar({ onDownloadResume }) {
       }
 
       // Track active section
-      const sections = ['hero', 'about', 'skills', 'projects', 'achievements', 'resume', 'connect', 'contact'];
+      const sections = ['hero', 'about', 'skills', 'projects', 'resume', 'contact'];
       const scrollPosition = window.scrollY + 200;
 
       for (const section of sections) {
@@ -107,10 +105,10 @@ export default function Navbar({ onDownloadResume }) {
           <div className="flex items-center gap-3">
             <button
               onClick={onDownloadResume}
-              className="hidden sm:flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold bg-gradient-to-r from-cyan-500/10 via-purple-500/10 to-pink-500/10 hover:from-cyan-500/20 hover:via-purple-500/20 hover:to-pink-500/20 border border-cyan-500/30 hover:border-cyan-400 text-cyan-200 transition-all duration-300 shadow-sm hover:shadow-cyan-500/20 active:scale-95"
+              className="hidden sm:flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold bg-gradient-to-r from-cyan-500/10 via-purple-500/10 to-pink-500/10 hover:from-cyan-500/20 hover:via-purple-500/20 hover:to-pink-500/20 border border-cyan-500/30 hover:border-cyan-400 text-cyan-200 transition-all duration-300 shadow-sm hover:shadow-cyan-500/20 active:scale-95 cursor-pointer"
             >
-              <Download className="w-3.5 h-3.5 text-cyan-400 animate-bounce" />
-              <span>Resume</span>
+              <Download className="w-3.5 h-3.5 text-cyan-400" />
+              <span>Resume PDF</span>
             </button>
 
             <a
@@ -125,7 +123,7 @@ export default function Navbar({ onDownloadResume }) {
             <button
               type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="lg:hidden p-2.5 rounded-xl bg-white/[0.05] border border-white/[0.1] text-slate-300 hover:text-white hover:bg-white/[0.1] transition-all focus:outline-none"
+              className="lg:hidden p-2.5 rounded-xl bg-white/[0.05] border border-white/[0.1] text-slate-300 hover:text-white hover:bg-white/[0.1] transition-all focus:outline-none cursor-pointer"
               aria-label="Toggle navigation menu"
             >
               {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -163,10 +161,10 @@ export default function Navbar({ onDownloadResume }) {
                   setMobileMenuOpen(false);
                   onDownloadResume();
                 }}
-                className="flex items-center justify-center gap-2 w-full py-3 rounded-xl text-sm font-semibold bg-cyan-500/15 border border-cyan-500/40 text-cyan-300 hover:bg-cyan-500/25 transition-all"
+                className="flex items-center justify-center gap-2 w-full py-3 rounded-xl text-sm font-semibold bg-cyan-500/15 border border-cyan-500/40 text-cyan-300 hover:bg-cyan-500/25 transition-all cursor-pointer"
               >
                 <Download className="w-4 h-4 text-cyan-400" />
-                <span>Download Resume</span>
+                <span>Download Resume (PDF)</span>
               </button>
 
               <a

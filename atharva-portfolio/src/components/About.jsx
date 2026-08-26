@@ -1,12 +1,11 @@
 import React from 'react';
 import { 
   GraduationCap, 
-  Globe, 
   Smartphone, 
   Code2, 
-  Cloud, 
+  Database, 
+  Terminal,
   Calendar, 
-  Compass, 
   CheckCircle2, 
   Sparkles,
   BookOpen,
@@ -16,10 +15,10 @@ import { aboutMeData } from '../data/portfolioData';
 
 export default function About() {
   const iconMap = {
-    Globe: <Globe className="w-5 h-5 text-cyan-400" />,
     Smartphone: <Smartphone className="w-5 h-5 text-purple-400" />,
-    Code2: <Code2 className="w-5 h-5 text-emerald-400" />,
-    Cloud: <Cloud className="w-5 h-5 text-amber-400" />
+    Code2: <Code2 className="w-5 h-5 text-cyan-400" />,
+    Terminal: <Terminal className="w-5 h-5 text-emerald-400" />,
+    Database: <Database className="w-5 h-5 text-amber-400" />
   };
 
   return (
@@ -37,10 +36,10 @@ export default function About() {
             <span>ABOUT ME</span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mb-4">
-            Engineered with <span className="gradient-text-cyan-purple">Curiosity & Rigor</span>
+            Engineering with <span className="gradient-text-cyan-purple">Passion & Precision</span>
           </h2>
           <p className="text-base sm:text-lg text-slate-300">
-            A closer look into my educational background, technical passions, and architectural mindset.
+            A closer look into my educational background, engineering foundation, and technical goals.
           </p>
         </div>
 
@@ -56,10 +55,10 @@ export default function About() {
                 </div>
                 <div>
                   <h3 className="text-lg sm:text-xl font-bold text-white">
-                    Computer Engineering Scholar
+                    Computer Engineering Undergraduate
                   </h3>
                   <p className="text-xs sm:text-sm text-cyan-400 font-mono">
-                    Savitribai Phule Pune University • 2022 - 2026
+                    MMIT, Pune • 2nd Year B.E. (2024 – Present)
                   </p>
                 </div>
               </div>
@@ -78,24 +77,24 @@ export default function About() {
               <div className="flex items-center gap-2.5 p-3 rounded-xl bg-white/[0.02] border border-white/[0.05]">
                 <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
                 <div>
-                  <div className="text-xs font-semibold text-white">Top 5% Rank</div>
-                  <div className="text-[10px] text-slate-400">8.9+ CGPA</div>
+                  <div className="text-xs font-semibold text-white">Diploma Topper</div>
+                  <div className="text-[10px] text-slate-400">88.44% Aggregate</div>
                 </div>
               </div>
 
               <div className="flex items-center gap-2.5 p-3 rounded-xl bg-white/[0.02] border border-white/[0.05]">
                 <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0" />
                 <div>
-                  <div className="text-xs font-semibold text-white">Full-Stack</div>
-                  <div className="text-[10px] text-slate-400">React + Native Android</div>
+                  <div className="text-xs font-semibold text-white">Android & Java</div>
+                  <div className="text-[10px] text-slate-400">Native Studio Apps</div>
                 </div>
               </div>
 
               <div className="flex items-center gap-2.5 p-3 rounded-xl bg-white/[0.02] border border-white/[0.05]">
                 <CheckCircle2 className="w-4 h-4 text-purple-400 shrink-0" />
                 <div>
-                  <div className="text-xs font-semibold text-white">Problem Solver</div>
-                  <div className="text-[10px] text-slate-400">350+ DSA Solutions</div>
+                  <div className="text-xs font-semibold text-white">Python & DSA</div>
+                  <div className="text-[10px] text-slate-400">Algorithmic Problem Solving</div>
                 </div>
               </div>
             </div>
@@ -127,14 +126,14 @@ export default function About() {
 
         </div>
 
-        {/* Academic & Professional Milestones Timeline */}
+        {/* Academic Milestones Timeline */}
         <div className="mt-12">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h3 className="text-2xl sm:text-3xl font-extrabold text-white">
-              Academic & Development <span className="gradient-text-emerald">Milestones</span>
+              Academic <span className="gradient-text-emerald">Journey</span>
             </h3>
             <p className="text-xs sm:text-sm text-slate-400 mt-2 font-mono">
-              Key milestones on the journey of becoming a versatile software engineer
+              Consistently strong academic performance from SSC and Diploma to Computer Engineering B.E.
             </p>
           </div>
 
@@ -167,7 +166,7 @@ export default function About() {
                             <Calendar className="w-3 h-3" />
                             {milestone.year}
                           </span>
-                          <span className="text-[10px] font-mono px-2 py-0.5 rounded-md bg-white/[0.05] text-slate-400">
+                          <span className="text-[10px] font-mono px-2 py-0.5 rounded-md bg-white/[0.05] text-emerald-400 font-bold">
                             {milestone.badge}
                           </span>
                         </div>

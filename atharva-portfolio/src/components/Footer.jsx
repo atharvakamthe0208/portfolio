@@ -7,7 +7,30 @@ import {
   Heart,
   Sparkles
 } from 'lucide-react';
-import { personalInfo } from '../data/portfolioData';
+import { 
+  GithubIcon, 
+  LinkedinIcon, 
+  LeetCodeIcon, 
+  HackerRankIcon 
+} from './BrandIcons';
+import { personalInfo, socialLinks } from '../data/portfolioData';
+
+const FooterBrandIcon = ({ name, className = "w-5 h-5" }) => {
+  switch (name) {
+    case 'GitHub':
+      return <GithubIcon className={className} />;
+    case 'LinkedIn':
+      return <LinkedinIcon className={className} />;
+    case 'Gmail':
+      return <Mail className={className} />;
+    case 'LeetCode':
+      return <LeetCodeIcon className={className} />;
+    case 'HackerRank':
+      return <HackerRankIcon className={className} />;
+    default:
+      return <Sparkles className={className} />;
+  }
+};
 
 export default function Footer() {
   const [time, setTime] = useState('');
@@ -34,13 +57,13 @@ export default function Footer() {
   };
 
   return (
-    <footer className="relative border-t border-white/[0.08] bg-[#07070a] pt-16 pb-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <footer className="relative border-t border-white/[0.08] bg-[#07070a] pt-14 pb-10 px-4 sm:px-6 lg:px-8 overflow-hidden">
       
       {/* Background subtle glow */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[40rem] h-24 bg-cyan-500/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 pb-12 border-b border-white/[0.06] items-start">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 pb-10 border-b border-white/[0.06] items-start">
           
           {/* Brand & Mission */}
           <div className="md:col-span-5 space-y-4">
@@ -51,12 +74,12 @@ export default function Footer() {
                 </span>
               </div>
               <span className="font-bold text-lg text-white tracking-tight">
-                {personalInfo.name}
+                {personalInfo.fullName || personalInfo.name}
               </span>
             </div>
 
             <p className="text-xs sm:text-sm text-slate-300 max-w-sm leading-relaxed">
-              Computer Engineering scholar committed to crafting scalable full-stack applications, native Android platforms, and robust software systems.
+              Computer Engineering student at MMIT Pune with a strong diploma foundation (88.44%). Building scalable Android applications, Java & Python tools, and high-impact digital solutions.
             </p>
 
             {/* Live Location / Time Badge */}
@@ -69,7 +92,7 @@ export default function Footer() {
           </div>
 
           {/* Quick Navigation Links */}
-          <div className="md:col-span-4 space-y-3">
+          <div className="md:col-span-3 space-y-3">
             <h4 className="text-xs font-mono uppercase text-slate-400 tracking-wider">
               Quick Navigation
             </h4>
@@ -77,37 +100,53 @@ export default function Footer() {
               <a href="#about" className="hover:text-cyan-300 transition-colors">About</a>
               <a href="#skills" className="hover:text-cyan-300 transition-colors">Skills</a>
               <a href="#projects" className="hover:text-cyan-300 transition-colors">Projects</a>
-              <a href="#achievements" className="hover:text-cyan-300 transition-colors">Achievements</a>
-              <a href="#resume" className="hover:text-cyan-300 transition-colors">Resume</a>
-              <a href="#connect" className="hover:text-cyan-300 transition-colors">Connect</a>
+              <a href="#resume" className="hover:text-cyan-300 transition-colors">Resume PDF</a>
               <a href="#contact" className="hover:text-cyan-300 transition-colors">Contact</a>
             </div>
           </div>
 
-          {/* Back to Top & Monogram */}
-          <div className="md:col-span-3 flex flex-col items-start md:items-end justify-between space-y-4">
+          {/* Official Social Logos Dock in Footer */}
+          <div className="md:col-span-4 flex flex-col items-start md:items-end justify-between space-y-4">
+            <div className="space-y-2">
+              <h4 className="text-xs font-mono uppercase text-slate-400 tracking-wider md:text-right">
+                Official Profiles
+              </h4>
+              <div className="flex items-center gap-2.5 flex-wrap">
+                {socialLinks.map((social, idx) => (
+                  <a
+                    key={idx}
+                    href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2.5 rounded-xl bg-white/[0.04] hover:bg-white/[0.1] border border-white/[0.08] hover:border-cyan-400/40 transition-all duration-200 hover:scale-110 active:scale-95"
+                    style={{ color: social.color }}
+                    title={`${social.name} (${social.username})`}
+                    aria-label={`Open ${social.name}`}
+                  >
+                    <FooterBrandIcon name={social.name} className="w-4 h-4" />
+                  </a>
+                ))}
+              </div>
+            </div>
+
             <button
               onClick={scrollToTop}
-              className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/[0.04] hover:bg-white/[0.1] border border-white/[0.08] text-xs font-semibold text-white transition-all shadow-md active:scale-95 cursor-pointer"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/[0.04] hover:bg-white/[0.1] border border-white/[0.08] text-xs font-semibold text-white transition-all shadow-md active:scale-95 cursor-pointer"
             >
               <span>Back to Top</span>
               <ArrowUp className="w-3.5 h-3.5 text-cyan-400" />
             </button>
-
-            <span className="text-[11px] text-slate-400 font-mono">
-              Designed with Apple Dark Aesthetic
-            </span>
           </div>
 
         </div>
 
         {/* Bottom Copyright */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400 font-mono text-center sm:text-left">
+        <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400 font-mono text-center sm:text-left">
           <div>
-            © {new Date().getFullYear()} Atharva Kamthe. All rights reserved.
+            © {new Date().getFullYear()} Atharva Santosh Kamthe. All rights reserved.
           </div>
           <div className="flex items-center gap-1">
-            Built with <span className="text-rose-400">♥</span> using React, Tailwind CSS & Vite
+            Built with <span className="text-rose-400">♥</span> using React & Tailwind CSS
           </div>
         </div>
 

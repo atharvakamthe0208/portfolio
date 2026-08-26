@@ -1,328 +1,250 @@
 export const personalInfo = {
   name: "Atharva Kamthe",
+  fullName: "Atharva Santosh Kamthe",
   role: "Computer Engineering Student",
   titles: [
     "Computer Engineering Student",
-    "Full-Stack Web Developer",
     "Android App Developer",
-    "Problem Solver & Coder",
-    "Aspiring Software Engineer"
+    "Java & Python Developer",
+    "Full-Stack Web Developer",
+    "Problem Solver & Coder"
   ],
-  bio: "Passionate Computer Engineering student with a strong foundation in Web Development, Android Development, Data Structures, and Full Stack. I love transforming complex challenges into elegant, efficient, and user-centric digital products.",
-  location: "Pune, Maharashtra, India",
+  bio: "Motivated Computer Engineering student currently in 2nd year B.E. at MMIT Pune, with a strong diploma foundation (88.44% aggregate). Skilled in Android development, Java, Python, C/C++, and modern technologies. Seeking internship opportunities to build innovative, real-world software solutions.",
+  location: "Kalepadal, Hadapsar, Pune, Maharashtra",
   email: "atharvakamthe2006@gmail.com",
-  phone: "+91 8421568534",
+  phone: "+91 84215 68534",
   status: "Available for Internships & Software Roles",
   stats: [
-    { label: "Major Projects", value: "4+", detail: "Full-Stack & Native Apps" },
-    { label: "Academic CGPA", value: "8.2+", detail: "Computer Engineering" },
+    { label: "Diploma Aggregate", value: "88.44%", detail: "Final Sem: 89% (MSBTE)" },
+    { label: "Engineering B.E.", value: "MMIT Pune", detail: "2024 – Present (2nd Year)" },
+    { label: "SSC 10th Score", value: "84.00%", detail: "State Board (2022)" },
+    { label: "Key Certifications", value: "4x Honors", detail: "VJTECH Academy (ISO 9001)" }
   ]
 };
 
 export const aboutMeData = {
-  headline: "Architecting the Future with Code, Passion, and Precision",
-  description1: "I am a dedicated Computer Engineering undergraduate at Pune University with an insatiable curiosity for software systems, clean architecture, and modern digital experiences. From architecting scalable web applications using React and Node.js to crafting responsive native Android apps in Java and Firebase, I thrive on writing clean, maintainable, and high-performance code.",
-  description2: "Beyond everyday coding, I enjoy diving deep into Data Structures & Algorithms, exploring Cloud Computing on GCP & AWS, and experimenting with Unreal Engine for game mechanics. My goal is to work on impactful products that solve real-world problems at scale while continually mastering cutting-edge technologies.",
+  headline: "Building Practical, High-Impact Software Solutions",
+  description1: "I am a Computer Engineering undergraduate at Marathwada Mitra Mandal's Institute of Technology (MMIT), Pune, having completed my Diploma in Computer Engineering from Jayawantrao Sawant Polytechnic with an outstanding 88.44% aggregate (89% in final semester).",
+  description2: "I possess a strong foundation in Java, Advanced Java, Android Studio, Python, C/C++, and Database Management Systems. I have engineered real-world projects such as the Blood Bank System (Android/Java) and various software tools, and I actively expand my knowledge in modern development frameworks.",
   interests: [
-    { title: "Full-Stack Web Dev", desc: "Building fluid, accessible, and reactive web applications with React, Tailwind, and Node.js.", icon: "Globe" },
-    { title: "Android Engineering", desc: "Developing native Android apps with Java, Firebase real-time backends, and location APIs.", icon: "Smartphone" },
-    { title: "Data Structures & Algos", desc: "Rigorous problem solving, optimizing algorithmic time-space complexity in Java & C++.", icon: "Code2" },
-    { title: "Cloud & Systems", desc: "Deploying microservices and exploring GCP, AWS cloud fundamentals, and database architectures.", icon: "Cloud" }
+    { title: "Android Development", desc: "Crafting intuitive native Android applications with Java, Android Studio, and local/cloud databases.", icon: "Smartphone" },
+    { title: "Java & Python Engineering", desc: "Developing robust backend logic, algorithms, OOP architectures, and Django services.", icon: "Code2" },
+    { title: "Data Structures & Algos", desc: "Continuous algorithmic problem solving in C/C++ and Java across LeetCode & HackerRank.", icon: "Terminal" },
+    { title: "Database Systems (DBMS)", desc: "Designing structured relational schemas, fast query execution, and secure data persistence.", icon: "Database" }
   ],
   milestones: [
     {
-      year: "2025 – Present",
-      title: "Bachelor of Engineering in Computer Engineering",
-      institution: "Savitribai Phule Pune University (SPPU)",
-      description: "Pursuing core computer science curriculum covering Data Structures, OOP, Database Management Systems, Computer Networks, Operating Systems, and Software Engineering.",
-      badge: "Degree / Academic"
+      year: "2024 – Present",
+      title: "B.E. in Computer Engineering (2nd Year)",
+      institution: "Marathwada Mitra Mandal's Institute of Technology (MMIT), Pune",
+      description: "Focusing on advanced algorithms, software engineering principles, mobile development, and systems design.",
+      badge: "Degree / Current"
     },
     {
-      year: "2024",
-      title: "Full-Stack & Android Engineering Milestone",
-      institution: "Project Showcase & Hackathons",
-      description: "Engineered 'Raktdaan', a lifesaving Android blood donation system with real-time location indexing, and 'Student Grade Tracker' desktop analytics suite with Java Swing and MySQL.",
-      badge: "Engineering Milestone"
+      year: "2022 – 2025",
+      title: "Diploma in Computer Engineering",
+      institution: "Jayawantrao Sawant Polytechnic, Hadapsar, Pune (MSBTE)",
+      description: "Passed with 88.44% aggregate and 89% in the final semester. Covered programming, networking, DBMS, mobile apps, and microprocessors.",
+      badge: "Passed: 2025 • 88.44%"
     },
     {
-      year: "2024 – 2025",
-      title: "Game Development & Systems Programming",
-      institution: "Unreal Engine & C Architecture",
-      description: "Designed 'Realm of Shadows' in Unreal Engine 5 using Blueprints and C++, alongside crafting a high-speed binary file POS billing system in C.",
-      badge: "Systems & 3D"
-    },
+      year: "Passed 2022",
+      title: "SSC – 10th Standard",
+      institution: "S.D.H.B.H. School (Maharashtra State Board)",
+      description: "Scored 84% with distinction, building a strong analytical foundation in science and mathematics.",
+      badge: "Passed: 2022 • 84%"
+    }
   ]
 };
 
 export const skillsData = [
-  // Frontend
-  { name: "React.js", category: "Frontend", level: "Advanced", percentage: 90, icon: "Atom", color: "#61dafb" },
-  { name: "JavaScript (ES6+)", category: "Frontend", level: "Advanced", percentage: 92, icon: "FileCode", color: "#f7df1e" },
-  { name: "HTML5 & CSS3", category: "Frontend", level: "Expert", percentage: 95, icon: "Layout", color: "#e34f26" },
-  { name: "Tailwind CSS", category: "Frontend", level: "Advanced", percentage: 92, icon: "Wind", color: "#38bdf8" },
-  { name: "Bootstrap 5", category: "Frontend", level: "Proficient", percentage: 88, icon: "Boxes", color: "#7952b3" },
-  
-  // Backend
-  { name: "Java (Core & Adv)", category: "Backend", level: "Advanced", percentage: 90, icon: "Coffee", color: "#f89820" },
-  { name: "Node.js", category: "Backend", level: "Proficient", percentage: 82, icon: "Server", color: "#68a063" },
-  { name: "Firebase (Auth/DB)", category: "Backend", level: "Advanced", percentage: 88, icon: "Flame", color: "#ffca28" },
-  { name: "C / C++", category: "Backend", level: "Proficient", percentage: 85, icon: "Binary", color: "#00599c" },
+  // Programming & Core
+  { name: "Java & Advanced Java", category: "Languages & Core", level: "Advanced", percentage: 92, color: "#f89820" },
+  { name: "Python", category: "Languages & Core", level: "Advanced", percentage: 90, color: "#3776ab" },
+  { name: "C / C++", category: "Languages & Core", level: "Advanced", percentage: 88, color: "#00599c" },
+  { name: "HTML & CSS", category: "Languages & Core", level: "Expert", percentage: 92, color: "#e34f26" },
 
-  // Databases
-  { name: "Firebase Realtime DB", category: "Databases", level: "Advanced", percentage: 90, icon: "Radio", color: "#f57c00" },
-  { name: "Cloud Firestore", category: "Databases", level: "Proficient", percentage: 84, icon: "Layers", color: "#ffa000" },
-  
-  // Tools & Platforms
-  { name: "Android Studio", category: "Tools", level: "Advanced", percentage: 88, icon: "Smartphone", color: "#3ddc84" },
-  { name: "Git & GitHub", category: "Tools", level: "Advanced", percentage: 92, icon: "GitBranch", color: "#f05032" },
-  { name: "VS Code", category: "Tools", level: "Expert", percentage: 95, icon: "Terminal", color: "#007acc" },
-  { name: "Figma (UI/UX)", category: "Tools", level: "Proficient", percentage: 80, icon: "Figma", color: "#f24e1e" },
-  // Cloud & Emerging
-  { name: "Unreal Engine 5", category: "Cloud & Emerging", level: "Intermediate", percentage: 75, icon: "Gamepad2", color: "#42b7a9" },
-  { name: "Blueprints Scripting", category: "Cloud & Emerging", level: "Proficient", percentage: 80, icon: "Cpu", color: "#8b5cf6" }
+  // Mobile & Frameworks
+  { name: "Android Studio", category: "Mobile & Frameworks", level: "Advanced", percentage: 90, color: "#3ddc84" },
+  { name: "Flutter (Basics)", category: "Mobile & Frameworks", level: "Intermediate", percentage: 70, color: "#02569b" },
+  { name: "Django (Basics)", category: "Mobile & Frameworks", level: "Intermediate", percentage: 72, color: "#092e20" },
+  { name: "React.js", category: "Mobile & Frameworks", level: "Proficient", percentage: 85, color: "#61dafb" },
+
+  // Databases & Tools
+  { name: "DBMS & MySQL", category: "Databases & Tools", level: "Advanced", percentage: 88, color: "#00758f" },
+  { name: "Git & Version Control", category: "Databases & Tools", level: "Advanced", percentage: 90, color: "#f05032" },
+  { name: "Microprocessor & OS", category: "Databases & Tools", level: "Proficient", percentage: 85, color: "#8b5cf6" },
+  { name: "VS Code", category: "Databases & Tools", level: "Expert", percentage: 95, color: "#007acc" }
+];
+
+export const certificationsData = [
+  { name: "Android Language", duration: "6 Months", grade: "Outstanding", issuer: "VJTECH ACADEMY (ISO 9001:2015)" },
+  { name: "Advanced Java", duration: "6 Months", grade: "Outstanding", issuer: "VJTECH ACADEMY (ISO 9001:2015)" },
+  { name: "Python Language", duration: "6 Months", grade: "Outstanding", issuer: "VJTECH ACADEMY (ISO 9001:2015)" },
+  { name: "Microprocessor", duration: "6 Months", grade: "Outstanding", issuer: "VJTECH ACADEMY (ISO 9001:2015)" }
+];
+
+export const coursesCompleted = [
+  "DSA using C",
+  "Object Oriented Programming with C++",
+  "Basics of Java & Advanced Java Programming",
+  "Python Programming",
+  "Mobile Application Development",
+  "Concepts of Database Management"
 ];
 
 export const projectsData = [
   {
     id: "raktdaan",
-    title: "Raktdaan – Blood Donation Platform",
-    subtitle: "Life-saving Mobile Platform Connecting Donors, Patients & Blood Banks",
-    category: "Android",
+    title: "Blood Bank System (Raktdaan)",
+    subtitle: "Android Application Connecting Blood Donors & Emergency Recipients",
+    category: "Android / Java",
     tag: "Featured App",
     badgeColor: "rose",
     imageTheme: "blood-donation",
-    summary: "A blood donation management platform connecting donors, recipients, and blood banks with real-time notifications and location-based donor search.",
-    longDescription: "Raktdaan is a full-featured Android application engineered to solve critical blood shortage emergencies. By integrating Firebase Realtime Database with Google Maps Geolocation API, Raktdaan enables emergency seekers to find matching, eligible donors within a customizable radial distance in seconds. It provides hospitals and blood banks with live inventory management, automatic donor eligibility reminders, and privacy-shielded donor communication.",
-    techStack: ["Java", "Firebase Realtime DB", "Android Studio", "Google Maps API", "FCM Notifications", "XML Material UI"],
+    summary: "An Android application connecting blood donors with recipients in emergency situations with donor registration, blood group search, and request management.",
+    longDescription: "Developed in Java using Android Studio, this Blood Bank management system bridges urgent communication gaps during medical emergencies. It includes real-time donor registration, categorized blood group search filters, fast donor lookup via local and structured databases, and an intuitive, accessible Material user interface.",
+    techStack: ["Java", "Android Studio", "Local Database / SQLite", "XML Material UI", "Donor Management"],
     metrics: [
-      { label: "Search Radius", value: "Custom 5-50km" },
-      { label: "Alert Dispatch", value: "< 2 Seconds" },
-      { label: "Target OS", value: "Android 8.0+" }
+      { label: "Target Platform", value: "Native Android" },
+      { label: "Search Mode", value: "Blood Group Filter" },
+      { label: "UI Design", value: "Accessible Material UI" }
     ],
     features: [
-      "Location-based real-time geospatial search for compatible blood group donors",
-      "Instant push notifications sent via Firebase Cloud Messaging for urgent emergency calls",
-      "Comprehensive Blood Bank directory with live verified stock levels",
-      "Donor profile management with automated 90-day donation interval reminders",
-      "Secure in-app calling / SMS trigger masking donor contact info"
+      "User-friendly donor registration and profile status management",
+      "Fast blood group lookup connecting patients with matching emergency donors",
+      "Request management module for blood requirements and emergency alerts",
+      "Optimized local database schema for instantaneous query response"
     ],
-    architecture: "Engineered using MVVM architectural pattern with Firebase Realtime Database for zero-latency live updates and Google Play Services Location Provider.",
-    github: "https://github.com/atharvakamthe/raktdaan-blood-donation",
-    liveDemo: "https://github.com/atharvakamthe/raktdaan-blood-donation#readme",
+    architecture: "Native Android MVC architecture with Java service handlers, custom SQLite/DBMS data persistence, and XML layouts.",
+    github: "https://github.com/atharvakamthe0208",
+    liveDemo: "https://github.com/atharvakamthe0208",
     color: "#ef4444"
   },
   {
     id: "realm-of-shadows",
-    title: "Realm of Shadows – Fantasy Adventure Game",
-    subtitle: "Immersive 3D Action RPG Built on Unreal Engine 5",
+    title: "Realm of Shadows – Action Adventure Game",
+    subtitle: "Immersive 3D Action RPG Built on Unreal Engine",
     category: "Game Dev",
     tag: "3D Game Engine",
     badgeColor: "purple",
     imageTheme: "fantasy-game",
     summary: "A fantasy adventure game developed using Unreal Engine and Blueprints featuring immersive gameplay, responsive combat, and rich storytelling.",
-    longDescription: "Realm of Shadows is a third-person fantasy action RPG set in a dark mystical realm. Built utilizing Unreal Engine 5's cutting-edge Lumen global illumination and Nanite virtualized geometry, the game delivers cinematic environments and fluid combat mechanics. Features include Behavior Tree-driven enemy AI, dynamic weapon combo chaining, stamina-managed dodging, inventory itemization, and interactive quest state progression.",
-    techStack: ["Unreal Engine 5", "Blueprints", "C++", "Lumen GI", "Chaos Physics", "Niagara VFX"],
+    longDescription: "Realm of Shadows is a third-person fantasy action RPG featuring responsive combat mechanics, weapon combo chaining, stamina management, and intelligent enemy AI behaviors designed with Unreal Engine Blueprints.",
+    techStack: ["Unreal Engine", "Blueprints", "C++", "Game Physics", "AI Behavior Trees"],
     metrics: [
-      { label: "Engine", value: "Unreal Engine 5.3" },
-      { label: "Framerate Target", value: "60 FPS (1080p/4K)" },
-      { label: "Scripting", value: "Visual Blueprints + C++" }
+      { label: "Engine", value: "Unreal Engine" },
+      { label: "Mechanics", value: "3rd Person Combat" },
+      { label: "Scripting", value: "Visual Blueprints" }
     ],
     features: [
-      "Dynamic third-person combat system featuring light/heavy attack combos, blocking, and dodging",
-      "Intelligent Enemy AI utilizing Unreal Behavior Trees and Perception components",
-      "Atmospheric dark fantasy world powered by Unreal Engine 5 Lumen dynamic lighting",
-      "Modular inventory and equipment system with stats modifiers",
-      "Cinematic in-game cutscenes and immersive ambient audio soundscapes"
+      "Dynamic third-person combat system featuring attack combos and dodging",
+      "Intelligent enemy AI with patrolling and aggro behaviors",
+      "Atmospheric level design and modular inventory system"
     ],
-    architecture: "Modular Blueprint component architecture with C++ base classes for performance-critical physics and custom Niagara visual particle effects.",
-    github: "https://github.com/atharvakamthe/realm-of-shadows",
-    liveDemo: "https://github.com/atharvakamthe/realm-of-shadows#trailer",
+    architecture: "Component-based Blueprint architecture with physics controllers and animation state machines.",
+    github: "https://github.com/atharvakamthe0208",
+    liveDemo: "https://github.com/atharvakamthe0208",
     color: "#8b5cf6"
   },
   {
     id: "student-grade-tracker",
-    title: "Student Grade Tracker – Analytics Suite",
-    subtitle: "Enterprise-grade Academic Performance & GPA Management System",
-    category: "Desktop",
+    title: "Student Grade Tracker",
+    subtitle: "Desktop Application for Student Evaluation & Academic Tracking",
+    category: "Desktop / Java",
     tag: "Java Suite",
     badgeColor: "cyan",
     imageTheme: "grade-tracker",
-    summary: "A desktop application for managing, calculating, and tracking student academic performance with GPA trends and visual chart reports.",
-    longDescription: "Student Grade Tracker is a robust Java Swing desktop software designed for universities, professors, and students to record, compute, and visualize academic grades. Backed by a normalized MySQL relational database connected via JDBC, it calculates cumulative GPAs, generates visual grade distribution histograms with JFreeChart, and produces formatted printable transcripts with automated classification.",
-    techStack: ["Java", "Java Swing", "MySQL", "JDBC", "JFreeChart", "FlatLaf Theme"],
+    summary: "A desktop application for managing, calculating, and tracking student academic performance with grade records and reporting.",
+    longDescription: "Engineered using Java Swing and MySQL, this desktop suite allows educational tracking of course assessments, automated GPA/grade computations, and organized student academic evaluation.",
+    techStack: ["Java", "Java Swing", "MySQL", "JDBC", "DBMS"],
     metrics: [
-      { label: "Architecture", value: "3-Tier MVC" },
-      { label: "Database", value: "MySQL Relational" },
-      { label: "UI Library", value: "Modern FlatLaf" }
+      { label: "Platform", value: "Java Desktop" },
+      { label: "Database", value: "MySQL / DBMS" },
+      { label: "Architecture", value: "MVC" }
     ],
     features: [
-      "Automated weighted GPA / CGPA computation with support for custom grading curves",
-      "Interactive graphical analysis including bar charts and distribution curves using JFreeChart",
-      "Relational data management for multiple courses, semesters, and student enrollments",
-      "Instant PDF/CSV export for academic transcripts and semester grade cards",
-      "Role-based authentication for administrative staff and students"
+      "Automated grade computation and performance classification",
+      "Relational course and student database records",
+      "Clean desktop graphical user interface with Swing components"
     ],
-    architecture: "3-Tier Model-View-Controller (MVC) pattern separating Swing UI components, business validation services, and MySQL database access objects (DAO).",
-    github: "https://github.com/atharvakamthe/student-grade-tracker",
-    liveDemo: "https://github.com/atharvakamthe/student-grade-tracker#screenshots",
+    architecture: "Layered 3-tier desktop architecture connecting Swing GUI to MySQL database via JDBC.",
+    github: "https://github.com/atharvakamthe0208",
+    liveDemo: "https://github.com/atharvakamthe0208",
     color: "#06b6d4"
   },
   {
     id: "mall-billing-system",
-    title: "Shopping Mall Billing & Inventory System",
-    subtitle: "High-Performance POS & Inventory Management in C",
-    category: "Systems",
+    title: "Shopping Mall Billing System",
+    subtitle: "POS & Inventory Management in C",
+    category: "Systems / C",
     tag: "C Programming",
     badgeColor: "emerald",
     imageTheme: "billing-system",
     summary: "A billing and inventory management application developed in C featuring binary file handling, stock tracking, and automated invoice calculation.",
-    longDescription: "Engineered from the ground up in C, this shopping mall billing and inventory application demonstrates the power of low-level systems programming. It implements high-speed binary file I/O for instant item lookups, barcode simulation, cart accumulation, automated sales tax and promotional discount calculations, alongside formatted receipts with daily sales ledger reporting.",
-    techStack: ["C Programming", "Binary File I/O", "Data Structures", "Dynamic Memory (malloc/free)", "Algorithms"],
+    longDescription: "A systems programming project in C demonstrating low-level file I/O operations, structured inventory storage, fast product search routines, and formatted invoice billing receipts.",
+    techStack: ["C Programming", "Binary File I/O", "Data Structures", "Algorithms"],
     metrics: [
-      { label: "Language", value: "C (C11 Standard)" },
-      { label: "Storage", value: "Direct Binary Records" },
-      { label: "Footprint", value: "< 2MB Memory" }
+      { label: "Language", value: "C Language" },
+      { label: "Persistence", value: "File Handling" },
+      { label: "Execution", value: "Fast Console POS" }
     ],
     features: [
-      "High-speed binary record serialization with instant product lookup by Item Code",
-      "Real-time customer billing cart with automatic GST/tax and promotional coupon deductions",
-      "Inventory management module with minimum stock threshold alerts and restock logs",
-      "Formatted ASCII receipt printing and daily revenue transaction audit logs",
-      "Strict memory leak checks and robust error-handling file pointers"
+      "Binary record file handling for inventory lookup and stock updates",
+      "Automated billing cart calculation with formatted receipts",
+      "Efficient struct-based memory data management"
     ],
-    architecture: "Structured procedural design using struct records, custom file indexing, and fast linear/binary search routines.",
-    github: "https://github.com/atharvakamthe/shopping-mall-billing-c",
-    liveDemo: "https://github.com/atharvakamthe/shopping-mall-billing-c#demo",
+    architecture: "Modular procedural C design with binary file streams.",
+    github: "https://github.com/atharvakamthe0208",
+    liveDemo: "https://github.com/atharvakamthe0208",
     color: "#10b981"
   }
 ];
 
-export const achievementsData = [
-  {
-    title: "Java Full Stack & Android Development",
-    issuer: "Coursera / Meta / University Certifications",
-    date: "2024",
-    category: "Certification",
-    desc: "Comprehensive specialization covering Java OOP, Android App Lifecycle, REST APIs, and Mobile UI/UX Design.",
-    link: "https://coursera.org",
-    icon: "Smartphone"
-  },
-  {
-    title: "Smart India Hackathon (SIH) Participant",
-    issuer: "Ministry of Education, Govt. of India",
-    date: "2025",
-    category: "Hackathon",
-    desc: "Developed a prototype for digital governance and resource optimization under intense 36-hour hackathon constraints.",
-    link: "https://sih.gov.in",
-    icon: "Trophy"
-  },
-  {
-    title: "GAME X INNOVATE :HACKSPRINT v7,0",
-    issuer: "MMCOE",
-    date: "2026",
-    category: "Certification",
-    desc: "1st Prize at MMCOE 24 hrs gamex hackathon",
-    icon: "certification"
-  }
-];
 export const socialLinks = [
   {
-    name: "LinkedIn",
-    username: "@atharvakamthe",
-    url: "https://www.linkedin.com/in/atharvakamthe",
-    color: "#0A66C2",
-    glowColor: "rgba(10,102,194,0.5)",
-    desc: "Connect with me professionally and explore my career journey."
+    name: "GitHub",
+    url: "https://github.com/atharvakamthe0208",
+    username: "@atharvakamthe0208",
+    icon: "GitHub",
+    color: "#ffffff",
+    glowColor: "rgba(255, 255, 255, 0.4)",
+    desc: "Inspect open-source repositories and code contributions"
   },
   {
-    name: "GitHub",
-    username: "@atharvakamthe0208",
-    url: "https://github.com/atharvakamthe0208",
-    color: "#ffffff",
-    glowColor: "rgba(255,255,255,0.4)",
-    desc: "Browse my repositories, projects, and open-source contributions."
+    name: "LinkedIn",
+    url: "https://www.linkedin.com/in/atharvakamthe",
+    username: "in/atharvakamthe",
+    icon: "LinkedIn",
+    color: "#0a66c2",
+    glowColor: "rgba(10, 102, 194, 0.5)",
+    desc: "Connect professionally and explore career network"
   },
   {
     name: "Gmail",
-    username: "atharvakamthe2006@gmail.com",
     url: "mailto:atharvakamthe2006@gmail.com",
-    color: "#EA4335",
-    glowColor: "rgba(234,67,53,0.5)",
-    desc: "Reach out for collaborations, internships, and opportunities."
+    username: "atharvakamthe2006@gmail.com",
+    icon: "Gmail",
+    color: "#ea4335",
+    glowColor: "rgba(234, 67, 53, 0.5)",
+    desc: "Send an email for internship inquiries and collaborations"
   },
   {
     name: "LeetCode",
-    username: "@atharvakamthe0208",
     url: "https://leetcode.com/u/atharvakamthe0208/",
-    color: "#FFA116",
-    glowColor: "rgba(255,161,22,0.5)",
-    desc: "View my coding challenges, solutions, and contest performance."
+    username: "@atharvakamthe0208",
+    icon: "LeetCode",
+    color: "#ffa116",
+    glowColor: "rgba(255, 161, 22, 0.5)",
+    desc: "View DSA problem-solving track record and solutions"
   },
   {
     name: "HackerRank",
-    url: "https://hackerrank.com/profile/atharvakamthe",
-    username: "hackerrank/atharvakamthe",
-    icon: "Terminal",
+    url: "https://www.hackerrank.com/profile/atharvakamthe201",
+    username: "atharvakamthe201",
+    icon: "HackerRank",
     color: "#2ec866",
     glowColor: "rgba(46, 200, 102, 0.5)",
-    desc: "5-Star problem solving and language badges"
-  },
-  {
-    name: "Twitter / X",
-    url: "https://x.com/atharva_kamthe",
-    username: "@atharva_kamthe",
-    icon: "Twitter",
-    color: "#1da1f2",
-    glowColor: "rgba(29, 161, 242, 0.5)",
-    desc: "Tech insights, developer discussions & thoughts"
+    desc: "Explore coding challenges and problem-solving badges"
   }
 ];
-
-export const resumeDetails = {
-  summary: "Computer Engineering undergraduate with hands-on expertise in React.js, Tailwind CSS, Java, Android Development, MySQL, and Firebase. Proven experience building full-stack platforms, 3D simulations, and systems-level tools. Strong algorithmic acumen with 350+ solved challenges on LeetCode/HackerRank.",
-  education: [
-    {
-      degree: "Bachelor of Engineering (B.E.) in Computer Engineering",
-      institution: "Savitribai Phule Pune University",
-      period: "2022 - 2026",
-      score: "CGPA: 8.9 / 10.0",
-      courses: "Data Structures & Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, Computer Networks, Software Engineering"
-    },
-    {
-      degree: "Higher Secondary Certificate (HSC) - Science",
-      institution: "Maharashtra State Board",
-      period: "2020 - 2022",
-      score: "Distinction (91.4%)",
-      courses: "Physics, Chemistry, Mathematics, Computer Science"
-    }
-  ],
-  skillsSummary: [
-    { category: "Languages", items: "Java, JavaScript (ES6+), C, C++, HTML5, CSS3, SQL" },
-    { category: "Frameworks & Libs", items: "React.js, Tailwind CSS, Node.js, Express.js, Bootstrap 5, Java Swing" },
-    { category: "Mobile & 3D", items: "Android Development (Java/XML), Firebase, Unreal Engine 5, Blueprints" },
-    { category: "Databases & Cloud", items: "MySQL, Firebase Realtime Database, Firestore, Google Cloud Platform, AWS (Basics)" },
-    { category: "Tools & Methodologies", items: "Git, GitHub, Android Studio, VS Code, Postman, Figma, Agile/Scrum" }
-  ],
-  coreProjects: [
-    {
-      name: "Raktdaan (Android / Firebase)",
-      tech: "Java, Firebase, Google Maps API, Android Studio",
-      detail: "Blood donation network with live geolocation donor radius matching and push notifications."
-    },
-    {
-      name: "Realm of Shadows (3D Game)",
-      tech: "Unreal Engine 5, Blueprints, C++",
-      detail: "Fantasy action adventure game featuring dynamic combat mechanics and Lumen illumination."
-    },
-    {
-      name: "Student Grade Tracker (Desktop Suite)",
-      tech: "Java, Swing, MySQL, JFreeChart",
-      detail: "Academic grading, CGPA analytics, and automated transcript generation suite."
-    },
-    {
-      name: "Shopping Mall Billing System",
-      tech: "C, Binary File I/O, Algorithms",
-      detail: "High-performance POS and inventory system with low-latency binary persistence."
-    }
-  ]
-};

@@ -6,15 +6,13 @@ import {
   Code2, 
   Terminal, 
   Sparkles, 
-  ExternalLink,
   ChevronDown,
-  Layers,
   Smartphone,
-  Server
+  CheckCircle2
 } from 'lucide-react';
 import { personalInfo } from '../data/portfolioData';
 
-export default function Hero({ onDownloadResume }) {
+export default function Hero({ onDownloadResume, onViewPdf }) {
   const [roleIndex, setRoleIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
@@ -103,10 +101,10 @@ export default function Hero({ onDownloadResume }) {
               {/* Download Resume */}
               <button
                 onClick={onDownloadResume}
-                className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-2xl bg-white/[0.05] hover:bg-white/[0.1] border border-cyan-500/30 hover:border-cyan-400 text-white font-semibold text-sm transition-all duration-300 shadow-lg shadow-cyan-500/10 active:scale-95 group"
+                className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-2xl bg-cyan-500/10 hover:bg-cyan-500/20 border border-cyan-500/40 text-cyan-200 font-semibold text-sm transition-all duration-300 shadow-lg shadow-cyan-500/10 active:scale-95 group cursor-pointer"
               >
                 <Download className="w-4 h-4 text-cyan-400 group-hover:-translate-y-0.5 transition-transform" />
-                <span>Download Resume</span>
+                <span>Download Resume (PDF)</span>
               </button>
 
               {/* Contact Me */}
@@ -141,7 +139,7 @@ export default function Hero({ onDownloadResume }) {
 
           </div>
 
-          {/* Right Column: Glowing Profile Avatar & Floating Tech Badges */}
+          {/* Right Column: Glowing Profile Card & Orbit Badges */}
           <div className="lg:col-span-5 flex justify-center items-center relative">
             <div className="relative w-72 sm:w-88 md:w-96 aspect-square flex items-center justify-center">
               
@@ -151,7 +149,7 @@ export default function Hero({ onDownloadResume }) {
               <div className="absolute -inset-2 rounded-full border border-cyan-500/20 border-dashed animate-spin-slow" />
               <div className="absolute -inset-8 rounded-full border border-purple-500/15" />
 
-              {/* Profile Card / Avatar Canvas */}
+              {/* Profile Card */}
               <div className="relative w-64 sm:w-80 h-64 sm:h-80 rounded-3xl p-1 bg-gradient-to-b from-cyan-400/40 via-purple-500/30 to-white/10 shadow-2xl shadow-purple-950/50">
                 <div className="w-full h-full rounded-[22px] bg-[#0c0d16] p-6 flex flex-col items-center justify-between relative overflow-hidden border border-white/10">
                   
@@ -162,25 +160,25 @@ export default function Hero({ onDownloadResume }) {
                   {/* Top Monogram / Header */}
                   <div className="w-full flex items-center justify-between z-10">
                     <span className="font-mono text-[11px] text-slate-400 flex items-center gap-1.5">
-                      <span className="w-2 h-2 rounded-full bg-cyan-400 animate-ping" />
-                      SYSTEM.ONLINE
+                      <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
+                      MMIT.PUNE
                     </span>
                     <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-white/[0.08] text-slate-300">
-                      v2.5.0
+                      B.E. 2nd Year
                     </span>
                   </div>
 
-                  {/* Center Hero Avatar Illustration */}
+                  {/* Center Hero Avatar */}
                   <div className="relative my-auto flex flex-col items-center z-10">
                     <div className="relative w-28 h-28 sm:w-32 sm:h-32 rounded-2xl bg-gradient-to-tr from-cyan-500 via-indigo-600 to-purple-600 p-[2px] shadow-glow-cyan">
                       <div className="w-full h-full rounded-[14px] bg-[#090a10] flex flex-col items-center justify-center relative overflow-hidden">
                         
-                        {/* Futuristic Tech Monogram */}
+                        {/* Tech Monogram */}
                         <div className="relative">
                           <Code2 className="w-12 h-12 text-cyan-300" />
                           <Terminal className="w-5 h-5 text-purple-400 absolute -bottom-1 -right-1" />
                         </div>
-                        <span className="font-mono font-extrabold text-lg mt-1 bg-gradient-to-r from-cyan-300 to-purple-300 bg-clip-text text-transparent">
+                        <span className="font-mono font-extrabold text-sm mt-1 bg-gradient-to-r from-cyan-300 to-purple-300 bg-clip-text text-transparent">
                           ATHARVA
                         </span>
                       </div>
@@ -188,10 +186,10 @@ export default function Hero({ onDownloadResume }) {
 
                     <div className="mt-3 text-center">
                       <h3 className="text-sm font-bold text-white tracking-wide">
-                        Atharva Kamthe
+                        Atharva Santosh Kamthe
                       </h3>
                       <p className="text-[11px] text-cyan-400 font-mono">
-                        B.E. Computer Engineering
+                        Computer Engineering Student
                       </p>
                     </div>
                   </div>
@@ -199,35 +197,32 @@ export default function Hero({ onDownloadResume }) {
                   {/* Bottom Mini Tags */}
                   <div className="w-full flex items-center justify-center gap-1.5 z-10">
                     <span className="px-2 py-0.5 text-[10px] font-mono rounded-md bg-cyan-950/60 border border-cyan-500/30 text-cyan-300">
-                      React.js
+                      Android Studio
                     </span>
                     <span className="px-2 py-0.5 text-[10px] font-mono rounded-md bg-purple-950/60 border border-purple-500/30 text-purple-300">
-                      Android
+                      Java & Python
                     </span>
                     <span className="px-2 py-0.5 text-[10px] font-mono rounded-md bg-emerald-950/60 border border-emerald-500/30 text-emerald-300">
-                      Java
+                      C/C++ & DBMS
                     </span>
                   </div>
                 </div>
               </div>
 
-              {/* Floating Orbit Badges around Avatar */}
-              {/* Badge 1: React / Web */}
+              {/* Floating Orbit Badges */}
               <div className="absolute -top-3 -right-2 sm:-right-4 px-3 py-1.5 rounded-xl glass-panel border border-cyan-500/40 text-xs font-semibold text-white shadow-xl shadow-cyan-500/10 flex items-center gap-2 animate-float">
-                <span className="w-2 h-2 rounded-full bg-cyan-400" />
-                <span className="text-[11px]">React & Tailwind</span>
+                <Smartphone className="w-3.5 h-3.5 text-cyan-400" />
+                <span className="text-[11px]">Android App Dev</span>
               </div>
 
-              {/* Badge 2: Android & Firebase */}
-              <div className="absolute -bottom-4 -left-2 sm:-left-4 px-3 py-1.5 rounded-xl glass-panel border border-purple-500/40 text-xs font-semibold text-white shadow-xl shadow-purple-500/10 flex items-center gap-2 animate-float" style={{ animationDelay: '2s' }}>
-                <Smartphone className="w-3.5 h-3.5 text-purple-400" />
-                <span className="text-[11px]">Android & Firebase</span>
+              <div className="absolute -bottom-4 -left-2 sm:-left-4 px-3 py-1.5 rounded-xl glass-panel border border-emerald-500/40 text-xs font-semibold text-white shadow-xl shadow-emerald-500/10 flex items-center gap-2 animate-float" style={{ animationDelay: '2s' }}>
+                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
+                <span className="text-[11px]">88.44% Diploma</span>
               </div>
 
-              {/* Badge 3: LeetCode / Algorithms */}
-              <div className="absolute top-1/2 -right-6 sm:-right-8 -translate-y-1/2 px-3 py-1.5 rounded-xl glass-panel border border-emerald-500/40 text-xs font-semibold text-white shadow-xl shadow-emerald-500/10 flex items-center gap-2 animate-float" style={{ animationDelay: '4s' }}>
-                <Code2 className="w-3.5 h-3.5 text-emerald-400" />
-                <span className="text-[11px]">350+ Solved</span>
+              <div className="absolute top-1/2 -right-6 sm:-right-8 -translate-y-1/2 px-3 py-1.5 rounded-xl glass-panel border border-purple-500/40 text-xs font-semibold text-white shadow-xl shadow-purple-500/10 flex items-center gap-2 animate-float" style={{ animationDelay: '4s' }}>
+                <Code2 className="w-3.5 h-3.5 text-purple-400" />
+                <span className="text-[11px]">LeetCode & HackerRank</span>
               </div>
 
             </div>
