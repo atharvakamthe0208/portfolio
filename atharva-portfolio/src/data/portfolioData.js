@@ -16,7 +16,7 @@ export const personalInfo = {
   status: "Available for Internships & Software Roles",
   stats: [
     { label: "Diploma Aggregate", value: "88.44%", detail: "Final Sem: 89% (MSBTE)" },
-    { label: "Engineering B.E.", value: "MMIT Pune", detail: "2024 – Present (2nd Year)" },
+    { label: "Engineering B.E.", value: "MMIT Pune", detail: "2024 – Present (3rd Year)" },
     { label: "SSC 10th Score", value: "84.00%", detail: "State Board (2022)" },
     { label: "Key Certifications", value: "4x Honors", detail: "VJTECH Academy (ISO 9001)" }
   ]
@@ -34,7 +34,7 @@ export const aboutMeData = {
   ],
   milestones: [
     {
-      year: "2024 – Present",
+      year: "2025 – Present",
       title: "B.E. in Computer Engineering (2nd Year)",
       institution: "Marathwada Mitra Mandal's Institute of Technology (MMIT), Pune",
       description: "Focusing on advanced algorithms, software engineering principles, mobile development, and systems design.",
