@@ -66,8 +66,6 @@ export const skillsData = [
 
   // Mobile & Frameworks
   { name: "Android Studio", category: "Mobile & Frameworks", level: "Advanced", percentage: 90, color: "#3ddc84" },
-  { name: "Flutter (Basics)", category: "Mobile & Frameworks", level: "Intermediate", percentage: 70, color: "#02569b" },
-  { name: "Django (Basics)", category: "Mobile & Frameworks", level: "Intermediate", percentage: 72, color: "#092e20" },
   { name: "React.js", category: "Mobile & Frameworks", level: "Proficient", percentage: 85, color: "#61dafb" },
 
   // Databases & Tools
